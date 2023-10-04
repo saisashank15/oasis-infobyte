@@ -1,0 +1,208 @@
+
+p {
+    margin-bottom: 0 !important;
+}
+
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/02/59/31/70/360_F_259317013_nJJaBgGGzvXMd6cAyLd6yMJtbdnd61wk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+
+.card-pd {
+    padding: 15px; 
+    background-color: #f0f0f0;
+    max-width: 400px;
+    border-radius: 6px; 
+    box-shadow: 0 0 6px rgba(100, 100, 100, 0.2); 
+}
+
+#pushNote {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; 
+}
+
+.card-pd input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; 
+    width: 100%;
+    outline: none;
+    background: #fff;
+}
+
+.card-pd button {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px; 
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-top: 3rem;
+}
+
+
+.completed {
+    margin: 15px 0; 
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.completed span {
+    font-weight: bold;
+    margin-left: 8px; 
+    font-size: 1.1rem; 
+}
+
+
+.todoCard {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #000;
+    box-shadow: 0 0 6px rgba(40, 6, 190, 0.5);
+    border: 1px solid #ddd;
+}
+
+
+.res-form {
+    visibility: hidden;
+}
+
+
+.music {
+    position: absolute;
+    top: 1.5rem; 
+    right: 1.5rem; 
+    padding: 8px 12px; 
+    border-radius: 12px; 
+    background-color: #007bff;
+}
+
+.playsound {
+    width: 24px; 
+    cursor: pointer;
+    margin-right: 8px; 
+}
+
+.noteDiv > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+    margin: 15px; 
+    z-index: 9999999;
+    cursor: pointer;
+}
+
+.music p {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+.taskC {
+    z-index: 111;
+    background-color: rgba(0, 0, 0, 0.2); 
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    backdrop-filter: blur(8px); 
+}
+
+
+.taskComplete {
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#pushComplete {
+    flex-direction: column;
+}
+
+#tskbox {
+    width: 95%; 
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+
+.title {
+    margin-top: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(234, 0, 255), rgb(82, 4, 228));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 991px) {
+    .res-form {
+        visibility: visible;
+    }
+
+    .completed {
+        margin-top: 20px; 
+    }
+
+    #pushNote {
+        gap: 20px; 
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .noteDiv > div {
+        flex-direction: column;
+    }
+
+    #tskbox {
+        margin-left: 0;
+    }
+}
+
+
+i {
+    height: 32px; 
+}
+
+
+.card-number {
+    position: absolute;
+    top: 0;
+    left: 12px; 
+    font-size: 2.2rem; 
+    opacity: 0.7; 
+    font-weight: 700;
+}
+
+.gap {
+    gap: 20px; 
+}
